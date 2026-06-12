@@ -18,10 +18,10 @@
     
     <!-- Inline critical CSS - everything above the fold -->
     <style>
-:root{--primary:#4A3728;--secondary:#7A1E26;--accent:#8E9D8E;--text:#3D3D3D;--text-light:#666;--heading:#3D2B1F;--gold:#C9A227}
+:root{--primary:#4A3728;--secondary:#7A1E26;--accent:#8E9D8E;--text:#2A2A2A;--text-light:#666;--heading:#1A1A1A;--gold:#C9A227}
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;color:var(--text);background:#FDFCFB;line-height:1.65;font-size:15px;-webkit-font-smoothing:antialiased}
-h1,h2,h3,h4{font-family:Georgia,'Times New Roman',serif;color:var(--heading);font-weight:600}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;color:var(--text);background:#FDFCFB;line-height:1.65;font-size:16px;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:'Playfair Display',Georgia,'Times New Roman',serif;color:var(--heading);font-weight:600;letter-spacing:-0.01em}
 .container{max-width:1140px;margin:0 auto;padding:0 20px}
 img{max-width:100%;height:auto;display:block}
 
@@ -34,10 +34,10 @@ img{max-width:100%;height:auto;display:block}
 .hero-mobile-headline{display:none}
 .hero-badge{display:inline-flex;align-items:center;gap:6px;background:#fff;border:1px solid #f0ebe6;padding:6px 14px;border-radius:25px;font-size:12px;color:var(--secondary);margin-bottom:16px;font-weight:500}
 .hero h1{font-size:2.2rem;line-height:1.15;margin-bottom:8px}
-.hero h1 em{color:var(--secondary);font-style:normal}
-.hero-subhead{font-size:16px;color:var(--secondary);font-weight:600;margin-bottom:10px}
+.hero h1 em{color:var(--secondary);font-style:italic;font-weight:600}
+.hero-subhead{font-size:16px;color:var(--text);font-weight:500;margin-bottom:10px}
 .product-label-top{text-align:center;margin-bottom:10px}
-.product-label-top .product-label-title{font-size:11px;text-transform:uppercase;letter-spacing:0.12em;color:var(--secondary);font-weight:600}
+.product-label-top .product-label-title{font-size:11px;text-transform:uppercase;letter-spacing:0.12em;color:var(--heading);font-weight:700}
 .product-label-top .product-label-shades{font-size:13px;color:var(--text)}
 .hero-img-wrap{position:relative;background:#FDFCFB}
 .hero-img-wrap img{width:100%;height:auto;display:block}
@@ -60,8 +60,8 @@ body{font-size:14px}
 .hero-grid{display:block}
 .hero-mobile-headline{display:block;text-align:center;margin-bottom:10px}
 .hero-mobile-headline .hero-badge{margin-bottom:8px;font-size:10px;padding:5px 12px}
-.hero-mobile-headline h1{font-size:1.6rem;line-height:1.12;margin-bottom:4px;letter-spacing:-0.02em}
-.hero-mobile-headline .hero-subhead{font-size:12px;color:var(--text-light);margin-bottom:0}
+.hero-mobile-headline h1{font-size:1.85rem;line-height:1.1;margin-bottom:6px;letter-spacing:-0.02em;color:var(--heading)}
+.hero-mobile-headline .hero-subhead{font-size:13px;color:var(--text);font-weight:500;margin-bottom:0}
 .hero-badge-desktop,.hero-h1-desktop,.hero-subhead-desktop,.hero-sub,.hero-checks{display:none}
 .hero-product{margin:0 -20px}
 .hero-img-wrap{max-width:100%;aspect-ratio:auto;background:transparent;border-radius:0}
@@ -89,15 +89,15 @@ body{font-size:14px}
 
     <!-- Non-blocking font load -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-    <noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
 
     <!-- Deferred full CSS -->
     <style>
 /* Full CSS - loads after critical */
 :root{--primary:#4A3728;--secondary:#7A1E26;--accent:#8E9D8E;--accent-dark:#7d8c7d;--cream:#FAF7F4;--cream-dark:#F5F1ED;--warm-bg:#f5efe9;--text:#3D3D3D;--text-light:#666;--gold:#C9A227;--heading:#3D2B1F}
-body.fonts-loaded{font-family:'Poppins',sans-serif}
-body.fonts-loaded h1,body.fonts-loaded h2,body.fonts-loaded h3,body.fonts-loaded h4{font-family:'Playfair Display',serif}
+body.fonts-loaded{font-family:'Inter',-apple-system,sans-serif}
+body.fonts-loaded h1,body.fonts-loaded h2,body.fonts-loaded h3,body.fonts-loaded h4{font-family:'Playfair Display',Georgia,serif}
 
 /* Announcement */
 .announcement{background:#9A6B65;color:#fff;text-align:center;padding:10px 20px;font-size:13px;font-weight:500}
@@ -115,10 +115,10 @@ body.fonts-loaded h1,body.fonts-loaded h2,body.fonts-loaded h3,body.fonts-loaded
 .hero-mobile-cta{display:none}
 .hero-mobile-testimonial{display:none}
 .hero-badge{display:inline-flex;align-items:center;gap:6px;background:#fff;border:1px solid #f0ebe6;padding:6px 14px;border-radius:25px;font-size:12px;color:var(--secondary);margin-bottom:16px;font-weight:500;box-shadow:0 2px 8px rgba(0,0,0,.03)}
-.hero h1{font-size:2.2rem;line-height:1.15;margin-bottom:8px}
-.hero h1 em{color:var(--secondary);font-style:normal}
-.hero-subhead{font-size:16px;color:var(--secondary);font-weight:600;margin-bottom:10px}
-.hero-sub{font-size:14px;color:var(--text);margin-bottom:16px;line-height:1.6}
+.hero h1{font-size:2.6rem;line-height:1.12;margin-bottom:10px;letter-spacing:-0.015em}
+.hero h1 em{color:var(--secondary);font-style:italic;font-weight:600}
+.hero-subhead{font-size:16px;color:var(--text);font-weight:500;margin-bottom:10px}
+.hero-sub{font-size:15px;color:var(--text);margin-bottom:16px;line-height:1.6}
 .hero-checks{display:flex;flex-wrap:wrap;gap:6px 14px;margin-bottom:16px;font-size:11px;color:var(--text-light)}
 .hero-checks span{display:flex;align-items:center;gap:4px}
 .hero-checks svg{width:13px;height:13px;color:var(--accent)}
